@@ -4,7 +4,7 @@ from app.schemas import PostCreat, PostResponse
 from app.db import Post, get_async_session, create_db_and_tables
 from sqlalchemy.ext.asyncio import AsyncSession
 from contextlib import asynccontextmanager
-from app.images import imagekit
+
 
 
 @asynccontextmanager

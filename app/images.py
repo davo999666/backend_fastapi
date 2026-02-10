@@ -2,11 +2,11 @@ from dotenv import load_dotenv
 import os
 from imagekitio import ImageKit
 
-
 load_dotenv()
 
+
 imagekit = ImageKit(
-    private_key=os.getenv("IMAGEKIT_PRIVATE_KEY"),
-    public_key=os.getenv("IMAGEKIT_PUBLIC_KEY"),
-    url_endpoint=os.getenv("IMAGEKIT_URL"),
+    publicKey=os.getenv("IMAGEKIT_PUBLIC_KEY"),
+    privateKey=os.getenv("IMAGEKIT_PRIVATE_KEY"),
+    urlEndpoint=os.getenv("IMAGEKIT_URL"),
 )
